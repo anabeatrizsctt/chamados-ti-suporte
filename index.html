@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Chamados TI — Ana Beatriz Corrêa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span class="raio"></span>
+  <strong>Chamados TI</strong>
+  <span>projeto de portfólio</span>
+</div>
+
+<div class="hero">
+  <h1>Sistema de Chamados TI</h1>
+  <p>Uma prévia do sistema que desenvolvi para simular a rotina de uma equipe de suporte técnico: abertura de chamados, acompanhamento de status e um painel com estatísticas reais de atendimento.</p>
+  <span class="selo">Projeto pessoal · PHP · Suporte técnico</span>
+</div>
+
+<div class="container">
+
+  <div class="secao">
+    <h2>Objetivo do projeto</h2>
+    <div class="linha"></div>
+    <p class="texto">
+      Criei esse sistema pensando em como uma equipe de TI organiza, na prática, o suporte técnico do dia a dia —
+      inspirado em ferramentas que já usei em experiências reais, como o GLPI. A ideia central foi transformar
+      chamados soltos em <strong>dado organizado</strong>: em vez de só abrir e fechar um chamado, o sistema mostra
+      padrões — qual categoria mais gera chamado, qual setor mais demanda suporte, e qual o tempo médio de resolução
+      da equipe.
+    </p>
+    <ul class="lista-objetivo">
+      <li>Registrar chamados de suporte técnico de forma estruturada (solicitante, setor, categoria, prioridade)</li>
+      <li>Acompanhar o status de cada chamado até a conclusão</li>
+      <li>Gerar visão gerencial: estatísticas por categoria, por setor e tempo médio de atendimento</li>
+      <li>Aplicar boas práticas básicas de segurança no acesso ao banco de dados</li>
+    </ul>
+  </div>
+
+  <div class="secao">
+    <h2>Tecnologias utilizadas</h2>
+    <div class="linha"></div>
+    <div class="stack-grid">
+      <div class="stack-card">
+        <div class="rot">Linguagem back-end</div>
+        <div class="val">PHP</div>
+        <div class="desc">Lógica do sistema e geração dinâmica das páginas</div>
+      </div>
+      <div class="stack-card">
+        <div class="rot">Banco de dados</div>
+        <div class="val">SQLite / MySQL</div>
+        <div class="desc">Acesso via PDO com prepared statements, prevenindo SQL Injection</div>
+      </div>
+      <div class="stack-card">
+        <div class="rot">Front-end</div>
+        <div class="val">HTML5 + CSS3</div>
+        <div class="desc">Interface própria, sem frameworks, focada em clareza para uso interno</div>
+      </div>
+      <div class="stack-card">
+        <div class="rot">Arquitetura</div>
+        <div class="val">Páginas separadas por função</div>
+        <div class="desc">Painel, listagem e formulário de abertura em arquivos independentes</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="secao">
+    <h2>Demonstração em vídeo</h2>
+    <div class="linha"></div>
+    <p class="texto">Navegação real pelo sistema: painel de estatísticas, listagem de chamados e abertura de um novo chamado.</p>
+    <div class="video-wrap">
+      <video controls preload="metadata">
+        <source src="assets/demo-sistema.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </div>
+  </div>
+
+  <div class="secao">
+    <h2>Telas do sistema</h2>
+    <div class="linha"></div>
+    <div class="galeria">
+      <figure>
+        <img src="assets/painel.jpeg" alt="Painel da equipe de TI com estatísticas">
+        <figcaption>Painel da equipe de TI
+          <span>Total de chamados no mês, em aberto, em andamento e tempo médio de resolução, além de gráficos por categoria e por setor solicitante</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/registrar.jpeg" alt="Formulário de abertura de chamado">
+        <figcaption>Abrir novo chamado
+          <span>Formulário com solicitante, setor, categoria, prioridade e descrição do problema</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/chamados.jpeg" alt="Listagem de todos os chamados">
+        <figcaption>Todos os chamados
+          <span>Listagem completa com filtro por status e atualização rápida direto na tabela</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+</div>
+
+<div class="rodape">
+  Desenvolvido por <strong>Ana Beatriz da Silva Corrêa</strong> · Técnico de Informática · Redes · Desenvolvimento Web
+</div>
+
+</body>
+</html>
